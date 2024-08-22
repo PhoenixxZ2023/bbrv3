@@ -84,7 +84,7 @@ cpu_level() {
         esac
     fi
 
-    cpu_support_info=$(wget -qO - https://raw.githubusercontent.com/opiran-club/VPS-Optimizer/main/checkcpu.sh | awk -f -) || {
+    cpu_support_info=$(wget -qO - https://raw.githubusercontent.com/PhoenixxZ2023/bbrv3/master/checkcpu.sh | awk -f -) || {
         echo -e "${RED}Falha ao verificar suporte da CPU.${NC}"
         return 1
     }
